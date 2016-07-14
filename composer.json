@@ -1,0 +1,22 @@
+{
+    "name": "huangcunqing/resit",
+    "description": "O",
+    "keywords": ["yii"],
+    "homepage": "https://github.com/huangcunqing/resit",
+    "type": "yii2-extension",
+    "license": "MIT",
+    
+    "authors": [
+        {
+            "name": "huangcunqing",
+            "email": "huangcunqing@xmisp.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "huangcunqing\\resit\\": ""
+        }
+    
+    
+    }
+}

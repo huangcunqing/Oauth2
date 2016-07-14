@@ -26,9 +26,9 @@ class Module extends \yii\base\Module{
 
    public function authorize($authorize_url,$client_id,$redirect_uri,$scope="user",$client_secret,$uri,$uri_token,$homepage){
        $req = new oauth2;
-       $req-> request1($authorize_url,$client_id,$redirect_uri,$scope);
-       $req->authorize1($client_id,$client_secret,$redirect_uri,$uri,$uri_token);
-       $req-> back1($homepage);
+       $req-> request($authorize_url,$client_id,$redirect_uri,$scope);
+       $req->authorize($client_id,$client_secret,$redirect_uri,$uri,$uri_token);
+       $req-> back($homepage);
 
    }
 }

@@ -2,7 +2,7 @@
 namespace  huangcunqing\oauth2;
 class oauth2{
 // 发送一个请求
-    public  function  request1($authorize_url,$client_id,$redirect_uri,$scope="user"){
+    public  function  request($authorize_url,$client_id,$redirect_uri,$scope="user"){
         if(!isset($_GET["code"] )){
             srand((double)microtime()*1000000);//create a random number feed.
             $ychar="0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,@,#,%,a,b,_";
@@ -20,7 +20,7 @@ class oauth2{
 
 
     //授权完成取得令牌
-    public function authorize1($client_id,$client_secret,$redirect_uri,$uri,$uri_token){
+    public function authorize($client_id,$client_secret,$redirect_uri,$uri,$uri_token){
         if (isset($_GET['code']) == true){
 
             $code = $_GET['code'];
@@ -60,7 +60,7 @@ class oauth2{
     }
 
 
-    public function back1($homepage){
+    public function back($homepage){
         echo "<script> window.location.href =\"$homepage\"; </script>";
 
     }

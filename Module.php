@@ -1,5 +1,5 @@
 <?php
-namespace  huangcunqing\Oauth2;
+namespace  huangcunqing\oauth2;
 
 class Module extends \yii\base\Module{
     public function init()

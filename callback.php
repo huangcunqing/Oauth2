@@ -1,6 +1,6 @@
 <?php
-namespace  huangcunqing\Oauth2;
-class Oauth2{
+namespace  huangcunqing\oauth2;
+class oauth2{
 
     public  function  request1($authorize_url,$client_id,$redirect_uri,$scope="user"){
         if(!isset($_GET["code"] )){

@@ -1,8 +1,8 @@
 {
-    "name": "huangcunqing/resit",
-    "description": "O",
-    "keywords": ["yii"],
-    "homepage": "https://github.com/huangcunqing/resit",
+    "name": "huangcunqing/oauth2",
+    "description": "O2",
+    "keywords": ["oauth2"],
+    "homepage": "https://github.com/huangcunqing/oauth2",
     "type": "yii2-extension",
     "license": "MIT",
     
@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "huangcunqing\\resit\\": ""
+            "huangcunqing\\oauth2\\": ""
         }
     
     

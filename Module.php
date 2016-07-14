@@ -1,5 +1,5 @@
 <?php
-namespace  huangcunqing\resit;
+namespace  huangcunqing\Oauth2;
 
 class Module extends \yii\base\Module{
     public function init()
@@ -8,10 +8,24 @@ class Module extends \yii\base\Module{
         // 从config.php加载配置来初始化模块
     }
 
-   public function re($email,$password,$username,$name="user"){
-            $res = new resit;
-           return $res->reg($email,$password,$username,$name);
+
+
+   public function request($authorize_url,$client_id,$redirect_uri,$scope="user"){
+            $req = new oauth2;
+            $req-> request1($authorize_url,$client_id,$redirect_uri,$scope);
+
+   }
+   public function authorize($client_id,$client_secret,$redirect_uri,$uri,$uri_token){
+            $req = new oauth2;
+            $req->authorize1($client_id,$client_secret,$redirect_uri,$uri,$uri_token);
     }
+   public function back1($homepage){
+        echo "<script> window.location.href =\"$homepage\"; </script>";
+   }
+//   public function re($email,$password,$username,$name="user"){
+//            $res = new resit;
+//           return $res->reg($email,$password,$username,$name);
+//    }
 
 //   public function entry($username,$password){
 //

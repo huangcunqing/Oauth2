@@ -40,7 +40,6 @@ class oauth2{
             $token = substr($result,$b+1,40);
 //            var_dump($token);
 //            携带令牌访问取得用户信息
-
             $uri_token .="?access_token=".$token;
             $ch = curl_init();
             curl_setopt ( $ch, CURLOPT_URL, $uri_token );

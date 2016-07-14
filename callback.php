@@ -1,7 +1,7 @@
 <?php
 namespace  huangcunqing\oauth2;
 class oauth2{
-
+// 发送一个请求
     public  function  request1($authorize_url,$client_id,$redirect_uri,$scope="user"){
         if(!isset($_GET["code"] )){
             srand((double)microtime()*1000000);//create a random number feed.
